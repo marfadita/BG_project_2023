@@ -30,7 +30,6 @@ There is targeted therapy for some point mutations, i.e. the decision on further
 2. Identification of the type of VAF mutations via purity dependence. VAF plots with colour annotation. <br>
 No correlation from purity - "Stable", the presence of VAF correlation from purity - "Decreasing" label. <br>
 FDR control (B-Y), $\alpha = 0.1$
-![image](https://user-images.githubusercontent.com/98456969/230784723-b929313d-7c6b-4101-91f9-ea4b190e8770.png)
 
 3. Group selection <br>
 Hypothesis: mutations stable from dilution are a characteristic of tumor tissue. <br>

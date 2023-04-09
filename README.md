@@ -50,7 +50,7 @@ Check:
 7. We consider suspicious those mutations in which the absolute difference between DNA and RNA VAF is more than 0.15
 9. In the HCC data, a subclone is distinguished: on the data on 100% dilution, it is clear that the median is in the region of 0.2 VAF DNA
 ![image](https://user-images.githubusercontent.com/98456969/230784871-41f0e701-1907-4554-b21a-e4ddcab3d85d.png)
-<space>
+$~$
 ![image](https://user-images.githubusercontent.com/98456969/230784889-17dbfad1-32a2-4fca-b736-06e234761fb9.png)
 
 

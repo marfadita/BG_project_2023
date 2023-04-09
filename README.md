@@ -11,3 +11,52 @@ There is targeted therapy for some point mutations, i.e. the decision on further
 ## Workflow
 1. Detection of transcription data
    * Сlassification problem
+2. VAF analysis
+   * Dynamics of mutation frequencies
+   * VAF groups analysis in different cell lines
+3. Allele-specific mutations analysis
+
+## Results
+### Part 1
+1. WES file is more like a reference data, RNA seq is more like expression.
+2. The task of determining which WES file which RNA was reduced to the task of binary classification: reference or not. For additional quality control, an additional classification was carried out: expression data or not. 
+3. To assess the quality, $F_{\beta}$ score was used, with the $\beta$ parameter equal to 1.4, since the specificity of the methods is important in this task
+4. Thus it turned out to determine the type of files
+### Part 2
+1. Consideration of polymorphism of ordinary cells. Joined WES and RNA data for each purity for both cell lines.
+2. Identification of the type of VAF mutations via purity dependence. VAF plots with colour annotation. <br>
+No correlation from purity - "Stable", the presence of VAF correlation from purity - "Decreasing" label. <br>
+FDR control (B-Y), $\alpha 0.1$
+3. Group selection <br>
+Hypothesis: mutations stable from dilution are a characteristic of tumor tissue. <br>
+Check: 
+    * The intersection of stable mutations and the corresponding genes of the COLA and NCC lines was empty
+    * Literature data on stable mutations confirmed the connection with a characteristic tumor: COLO - melanoma, HCC - sarcoma
+4. COLO's GO correlates with membrane, Golgi functions.
+5. HCC's GO correlates with cytoplasm cell projection, signal transduction, synapse, nucleus.
+
+### Part 3
+1. VAF DNA is an indicator of zygosity and heterogeneity in somatic mutations, which we are studying
+2. Using VAF DNA, we determine the baseline for the heterozygote. Then we look at the VAF RNA to see how much the expression of this gene changes.
+3. VAF RNA is not really an indicator of expression, it is also an indicator of zygosity and heterogeneity, but it depends on expression. Because expressions can go unevenly from two alleles.
+4. We start with a simple assumption that 50% of mutations in 100% breeding are heterozygotes.
+5. Using VAF DNA, we determine the baseline for the heterozygote. Then we look at the VAF RNA to see how much the expression of this gene changes.
+6. We consider suspicious those mutations in which the absolute difference between DNA and RNA VAF is more than 0.15
+7. In the HCC data, a subclone is distinguished: on the data on 100% dilution, it is clear that the median is in the region of 0.2 VAF DNA
+
+
+
+## Conclusions
+* At a qualitative level, it turned out to distinguish
+between RNA and WES files
+* The dynamics of mutation frequencies depending on the
+breeding of cell lines has been studied
+* Allele-specific mutations have been identified
+  * Stable COLO: ALS2, ABCB5, PLD3, CECR2
+  * Stable HCC: NET1, OPHN1
+* There was no literature evidence of the characteristic allele-specificity of these mutations in specific tumors
+
+
+
+## In repo
+MAF files that are sources for analysis cannot be shared, only a notebook with a specific data analysis is in the repository, write to the [mail](mailto:marfuta.zak@gmail.com) for all questions and remarks

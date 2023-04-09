@@ -22,6 +22,7 @@ There is targeted therapy for some point mutations, i.e. the decision on further
 2. The task of determining which WES file which RNA was reduced to the task of binary classification: reference or not. For additional quality control, an additional classification was carried out: expression data or not. 
 3. To assess the quality, $F_{\beta}$ score was used, with the $\beta$ parameter equal to 1.4, since the specificity of the methods is important in this task
 4. Thus it turned out to determine the type of files
+![pie_chart](https://github.com/marfadita/BG_project_2023/blob/main/pie_chart.png)
 ### Part 2
 1. Consideration of polymorphism of ordinary cells. Joined WES and RNA data for each purity for both cell lines.
 2. Identification of the type of VAF mutations via purity dependence. VAF plots with colour annotation. <br>

@@ -68,7 +68,8 @@ breeding of cell lines has been studied
 
 ## In repo
 * Notebook with a specific data analysis is in the repository
-* Plots for data analysis
+* Plots for data analysis <br>
+
 MAF files that are sources for analysis cannot be shared
 
 

@@ -59,4 +59,4 @@ breeding of cell lines has been studied
 
 
 ## In repo
-MAF files that are sources for analysis cannot be shared, only a notebook with a specific data analysis is in the repository, write to the [mail](mailto:marfuta.zak@gmail.com) for all questions and remarks
+MAF files that are sources for analysis cannot be shared, only a notebook with a specific data analysis is in the repository, write to the [Marfa](mailto:marfuta.zak@gmail.com) for all questions and remarks

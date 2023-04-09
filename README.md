@@ -10,4 +10,4 @@ There is targeted therapy for some point mutations, i.e. the decision on further
 
 ## Workflow
 1. Detection of transcription data
-  * Сlassification problem
+   * Сlassification problem

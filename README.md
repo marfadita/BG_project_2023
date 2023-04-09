@@ -26,7 +26,7 @@ There is targeted therapy for some point mutations, i.e. the decision on further
 1. Consideration of polymorphism of ordinary cells. Joined WES and RNA data for each purity for both cell lines.
 2. Identification of the type of VAF mutations via purity dependence. VAF plots with colour annotation. <br>
 No correlation from purity - "Stable", the presence of VAF correlation from purity - "Decreasing" label. <br>
-FDR control (B-Y), $\alpha 0.1$
+FDR control (B-Y), $\alpha = 0.1$
 3. Group selection <br>
 Hypothesis: mutations stable from dilution are a characteristic of tumor tissue. <br>
 Check: 

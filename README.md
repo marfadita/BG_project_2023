@@ -22,12 +22,16 @@ There is targeted therapy for some point mutations, i.e. the decision on further
 2. The task of determining which WES file which RNA was reduced to the task of binary classification: reference or not. For additional quality control, an additional classification was carried out: expression data or not. 
 3. To assess the quality, $F_{\beta}$ score was used, with the $\beta$ parameter equal to 1.4, since the specificity of the methods is important in this task
 4. Thus it turned out to determine the type of files
-![pie_chart](https://github.com/marfadita/BG_project_2023/blob/main/pie_chart.png)
+![image](https://user-images.githubusercontent.com/98456969/230784789-d890af7e-9619-4bed-ac2f-e780f525e5c3.png)
+
+
 ### Part 2
 1. Consideration of polymorphism of ordinary cells. Joined WES and RNA data for each purity for both cell lines.
 2. Identification of the type of VAF mutations via purity dependence. VAF plots with colour annotation. <br>
 No correlation from purity - "Stable", the presence of VAF correlation from purity - "Decreasing" label. <br>
 FDR control (B-Y), $\alpha = 0.1$
+![image](https://user-images.githubusercontent.com/98456969/230784723-b929313d-7c6b-4101-91f9-ea4b190e8770.png)
+
 3. Group selection <br>
 Hypothesis: mutations stable from dilution are a characteristic of tumor tissue. <br>
 Check: 
@@ -41,10 +45,13 @@ Check:
 2. Using VAF DNA, we determine the baseline for the heterozygote. Then we look at the VAF RNA to see how much the expression of this gene changes.
 3. VAF RNA is not really an indicator of expression, it is also an indicator of zygosity and heterogeneity, but it depends on expression. Because expressions can go unevenly from two alleles.
 4. We start with a simple assumption that 50% of mutations in 100% breeding are heterozygotes.
-5. Using VAF DNA, we determine the baseline for the heterozygote. Then we look at the VAF RNA to see how much the expression of this gene changes.
-6. We consider suspicious those mutations in which the absolute difference between DNA and RNA VAF is more than 0.15
-7. In the HCC data, a subclone is distinguished: on the data on 100% dilution, it is clear that the median is in the region of 0.2 VAF DNA
+![image](https://user-images.githubusercontent.com/98456969/230784748-561774f0-225a-4a39-a48d-2e9f6c9bcf0c.png)
 
+6. Using VAF DNA, we determine the baseline for the heterozygote. Then we look at the VAF RNA to see how much the expression of this gene changes.
+7. We consider suspicious those mutations in which the absolute difference between DNA and RNA VAF is more than 0.15
+9. In the HCC data, a subclone is distinguished: on the data on 100% dilution, it is clear that the median is in the region of 0.2 VAF DNA
+![image](https://user-images.githubusercontent.com/98456969/230784871-41f0e701-1907-4554-b21a-e4ddcab3d85d.png)
+![image](https://user-images.githubusercontent.com/98456969/230784889-17dbfad1-32a2-4fca-b736-06e234761fb9.png)
 
 
 ## Conclusions

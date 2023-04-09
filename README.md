@@ -1,4 +1,4 @@
-# Mutations analysis in transcription data. <br> Allele specific expression
+# Mutations analysis in transcription data <br> Allele specific expression
 ## Authors:
 * Marfa Zakirova
 * Anastasiya Yudina
